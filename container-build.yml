@@ -1,23 +1,23 @@
 ---
-- name: create the lxc containers on icehouse.mytestdomain.org
+- name: create the lxc containers on icehouse.mytestdomain.org 321
   hosts: icehouse
   remote_user: root
 
 tasks
- - name: create galera-2
-   command: /usr/bin/lxc-create --template /usr/share/lxc/templates/lxc-ubuntu-cloud --name galera-2 -- --release trusty
+  - name: create galera-2
+    command: /usr/bin/lxc-create --template /usr/share/lxc/templates/lxc-ubuntu-cloud --name galera-2 -- --release trusty
 
- - name: create galera-2
-   command: /usr/bin/lxc-create --template /usr/share/lxc/templates/lxc-ubuntu-cloud --name galera-3 -- --release trusty
+  - name: create galera-2
+    command: /usr/bin/lxc-create --template /usr/share/lxc/templates/lxc-ubuntu-cloud --name galera-3 -- --release trusty
 
- - name: create galera-2
-   command: /usr/bin/lxc-create --template /usr/share/lxc/templates/lxc-ubuntu-cloud --name keystone -- --release trusty
+  - name: create galera-2
+    command: /usr/bin/lxc-create --template /usr/share/lxc/templates/lxc-ubuntu-cloud --name keystone -- --release trusty
 
- - name: create galera-2
-   command: /usr/bin/lxc-create --template /usr/share/lxc/templates/lxc-ubuntu-cloud --name glance -- --release trusty
+  - name: create galera-2
+    command: /usr/bin/lxc-create --template /usr/share/lxc/templates/lxc-ubuntu-cloud --name glance -- --release trusty
 
- - name: create galera-2
-   command: /usr/bin/lxc-create --template /usr/share/lxc/templates/lxc-ubuntu-cloud --name neutron -- --release trusty
+  - name: create galera-2
+    command: /usr/bin/lxc-create --template /usr/share/lxc/templates/lxc-ubuntu-cloud --name neutron -- --release trusty
 
- - name: create galera-2
-   command: /usr/bin/lxc-create --template /usr/share/lxc/templates/lxc-ubuntu-cloud --name nova -- --release trusty
+  - name: create galera-2
+    command: /usr/bin/lxc-create --template /usr/share/lxc/templates/lxc-ubuntu-cloud --name nova -- --release trusty
